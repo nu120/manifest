@@ -59,3 +59,6 @@ root@ed46e5b49c32:/opt/buildroot# echo 8 | source ./buildroot/build/setenv.sh
 root@ed46e5b49c32:/opt/buildroot# make
 root@ed46e5b49c32:/opt/buildroot# exit
 ```
+
+The generated image is in `output/mesonaxg_s420_32_release/images/aml_upgrade_package.img` path.
+

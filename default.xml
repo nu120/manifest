@@ -24,4 +24,10 @@
     <!-- Build environment -->
     <project name="nu120/docker-buildenv" path="docker-buildenv" />
 
+    <!-- NUGU -->
+    <project name="nugulinux/endpoint-detector" path="buildroot/package/nugu-epd/src" />
+    <project name="nugulinux/keyword-detector" path="buildroot/package/nugu-kwd/src" />
+    <project name="nugulinux/nugu-extension" path="buildroot/package/nugu-extension/src" />
+    <project name="nugulinux/nugu-onboarding" path="buildroot/package/nugu-onboarding/src"  />
+    <project name="nugulinux/nu120" path="buildroot/package/nu120/src"/>
 </manifest>

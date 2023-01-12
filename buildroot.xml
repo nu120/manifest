@@ -26,4 +26,16 @@
     <project name="nu120/toolchain_arm_gcc-linaro-6.3.1"
              path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"
              clone-depth="1" />
+
+    <!-- NUGU -->
+    <project name="nugulinux/endpoint-detector"
+             path="buildroot/package/nugu-epd/src" clone-depth="1" />
+    <project name="nugulinux/keyword-detector"
+             path="buildroot/package/nugu-kwd/src" clone-depth="1" />
+    <project name="nugulinux/nugu-extension"
+             path="buildroot/package/nugu-extension/src" clone-depth="1" />
+    <project name="nugulinux/nugu-onboarding"
+             path="buildroot/package/nugu-onboarding/src" clone-depth="1" />
+    <project name="nugulinux/nu120"
+             path="buildroot/package/nu120/src" clone-depth="1" />
 </manifest>

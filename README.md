@@ -40,7 +40,7 @@ $ mkdir workspace && cd workspace
 
 # Download sources using `repo` command
 $ repo init -u git@github.com:nu120/manifest
-$ repo sync
+$ repo sync --fetch-submodules
 ```
 
 If you have already downloaded the source code through the `repo` command and want to update all repositories to the latest, just run `repo sync` as shown below.
@@ -61,4 +61,3 @@ root@ed46e5b49c32:/opt/buildroot# exit
 ```
 
 The generated image is in `output/mesonaxg_s420_32_release/images/aml_upgrade_package.img` path.
-

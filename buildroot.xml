@@ -32,8 +32,12 @@
              path="buildroot/package/nugu-epd/src" clone-depth="1" />
     <project name="nugulinux/keyword-detector"
              path="buildroot/package/nugu-kwd/src" clone-depth="1" />
+    <project name="nugulinux/nugu-linux"
+             path="buildroot/package/nugu-linux/src" clone-depth="1" />
     <project name="nugulinux/nugu-extension"
              path="buildroot/package/nugu-extension/src" clone-depth="1" />
+    <project name="nugulinux/nugu-daemon"
+             path="buildroot/package/nugu-daemon/src" clone-depth="1" />
     <project name="nugulinux/nugu-onboarding"
              path="buildroot/package/nugu-onboarding/src" clone-depth="1" />
     <project name="nugulinux/nu120"

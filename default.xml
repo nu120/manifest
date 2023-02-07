@@ -25,11 +25,5 @@
     <project name="nu120/docker-buildenv" path="docker-buildenv" />
 
     <!-- NUGU -->
-    <project name="nugulinux/endpoint-detector" path="buildroot/package/nugu-epd/src" />
-    <project name="nugulinux/keyword-detector" path="buildroot/package/nugu-kwd/src" />
-    <project name="nugulinux/nugu-linux" path="buildroot/package/nugu-linux/src" />
-    <project name="nugulinux/nugu-extension" path="buildroot/package/nugu-extension/src" />
-    <project name="nugulinux/nugu-daemon" path="buildroot/package/nugu-daemon/src" />
-    <project name="nugulinux/nugu-onboarding" path="buildroot/package/nugu-onboarding/src" />
-    <project name="nugulinux/nu120" path="buildroot/package/nu120/src" />
+    <project name="nu120/packages" path="buildroot/package/nugu/ipk" clone-depth="1" />
 </manifest>

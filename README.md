@@ -4,12 +4,16 @@
   - [ubuntu](#ubuntu)
   - [macOS](#macos)
 - [Usage](#usage)
-  - [Prepare all sources](#prepare-all-sources)
+  - [Prepare working directories](#prepare-working-directories)
+  - [Download using repo command](#download-using-repo-command)
+    - [Option-A: With all git history (for developer, slow)](#option-a-with-all-git-history-for-developer-slow)
+    - [Option-B: Without git history (for build machine, fast)](#option-b-without-git-history-for-build-machine-fast)
+  - [Update to latest](#update-to-latest)
   - [Build](#build)
 
 ## Install repo tool
 
-<https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md#install>
+Reference: <https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md#install>
 
 ### ubuntu
 
@@ -32,18 +36,37 @@ brew install repo
 
 ## Usage
 
-### Prepare all sources
+### Prepare working directories
 
 ```sh
+# Create cache directory
+$ mkdir ~/cache
+
 # Create working directory
 $ mkdir workspace && cd workspace
+```
 
-# Download sources using `repo` command
+### Download using repo command
+
+#### Option-A: With all git history (for developer, slow)
+
+```sh
+# use default.xml manifest
 $ repo init -u git@github.com:nu120/manifest
 $ repo sync --fetch-submodules
 ```
 
-If you have already downloaded the source code through the `repo` command and want to update all repositories to the latest, just run `repo sync` as shown below.
+#### Option-B: Without git history (for build machine, fast)
+
+```sh
+# use buildroot.xml manifest
+$ repo init -u git@github.com:nu120/manifest -m buildroot.xml
+$ repo sync --fetch-submodules
+```
+
+### Update to latest
+
+After that, if you want to keep all repositories up-to-date, you can run the `repo sync` command as shown below.
 
 ```sh
 # Update to latest
@@ -51,6 +74,10 @@ $ repo sync
 ```
 
 ### Build
+
+All builds run inside docker containers, so you must have an environment where you can run docker.
+
+The cache directory and the current directory are shared with the docker container via the `-v` option.
 
 ```sh
 $ ./enter_buildenv.sh
@@ -60,4 +87,4 @@ root@ed46e5b49c32:/opt/buildroot# make
 root@ed46e5b49c32:/opt/buildroot# exit
 ```
 
-The generated image is in `output/mesonaxg_s420_32_release/images/aml_upgrade_package.img` path.
+The generated image can be found in the path `output/mesonaxg_s420_32_release/images/aml_upgrade_package.img`.

@@ -26,6 +26,9 @@
     <project name="nu120/toolchain_arm_gcc-linaro-6.3.1"
              path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"
              clone-depth="1" />
+    <project name="nu120/toolchain_arm_gcc-arm-8.3.0"
+             path="toolchain/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf"
+             clone-depth="1" />
 
     <!-- NUGU -->
     <project name="nu120/packages" path="buildroot/package/nugu/ipk" clone-depth="1" />

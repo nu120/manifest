@@ -12,7 +12,7 @@
 
     <!-- Buildroot -->
     <project name="nu120/uboot" path="bootloader/uboot-2015-dev" clone-depth="1" />
-    <project name="nu120/buildroot" path="buildroot" clone-depth="1" />
+    <project name="nu120/buildroot" path="buildroot" revision="gcc8" clone-depth="1" />
     <project name="nu120/hardware" path="hardware/aml-4.9" clone-depth="1" />
     <project name="nu120/kernel" path="kernel/aml-4.9" clone-depth="1" />
     <project name="nu120/multimedia" path="multimedia" clone-depth="1" />
@@ -23,8 +23,8 @@
     <project name="nu120/toolchain_aarch64_gcc-linaro-6.3.1"
              path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu"
              clone-depth="1" />
-    <project name="nu120/toolchain_arm_gcc-linaro-6.3.1"
-             path="toolchain/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"
+    <project name="nu120/toolchain_arm_gcc-arm-8.3.0"
+             path="toolchain/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf"
              clone-depth="1" />
 
     <!-- NUGU -->

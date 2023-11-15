@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="ssh://git@github.com/" />
+    <remote name="upstream" fetch="https://github.com/" />
+
+    <default revision="master" remote="origin" />
+
+    <project name="nu120/manifest" path="manifest" revision="master">
+        <linkfile src="Makefile" dest="Makefile" />
+        <linkfile src="enter_buildenv.sh" dest="enter_buildenv.sh" />
+    </project>
+
+    <!-- Buildroot -->
+    <project name="nu120/uboot" path="bootloader/uboot-2015-dev" clone-depth="1" />
+    <project name="nu120/buildroot" path="buildroot" revision="gcc10" clone-depth="1" />
+    <project name="nu120/hardware" path="hardware/aml-4.9" clone-depth="1" />
+    <project name="nu120/kernel" path="kernel/aml-4.9" clone-depth="1" />
+    <project name="nu120/multimedia" path="multimedia" clone-depth="1" />
+    <project name="nu120/vendor" path="vendor" clone-depth="1" />
+    <project name="nu120/toolchain_gcc-linaro-aarch64-none"
+             path="toolchain/gcc/linux-i386/aarch64/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux"
+             clone-depth="1" />
+    <project name="nu120/toolchain_aarch64_gcc-linaro-6.3.1"
+             path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu"
+             clone-depth="1" />
+    <project name="nu120/toolchain_arm_gcc-arm-10.3"
+             path="toolchain/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"
+             clone-depth="1" />
+
+    <!-- NUGU -->
+    <project name="nu120/packages" path="buildroot/package/nugu/ipk" clone-depth="1" />
+</manifest>

@@ -13,6 +13,7 @@
     <!-- Buildroot -->
     <project name="nu120/uboot-repo" path="bootloader/uboot-repo" clone-depth="1" />
     <project name="nu120/buildroot" path="buildroot" clone-depth="1" revision="evk_5_4" />
+    <project name="nu120/hardware" path="hardware/aml-4.9" clone-depth="1" revision="evk_4_9" />
     <project name="nu120/hardware" path="hardware/aml-5.4" clone-depth="1" revision="evk_5_4" />
     <project name="nu120/kernel" path="kernel/aml-5.4" clone-depth="1" revision="evk_5_4" />
     <project name="nu120/multimedia" path="multimedia" clone-depth="1" revision="evk_5_4" />

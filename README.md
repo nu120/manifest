@@ -88,3 +88,10 @@ root@ed46e5b49c32:/opt/buildroot# exit
 ```
 
 The generated image can be found in the path `output/mesonaxg_s420_32_release/images/aml_upgrade_package.img`.
+
+### Manifest list
+
+* `buildroot.xml` - NU120 product device
+* `buildroot_evk_49.xml` - Linkplay EVK(Evaluation Kit) with Kernel 4.9
+* `buildroot_evk_54.xml` - Linkplay EVK with Kernel 5.4
+

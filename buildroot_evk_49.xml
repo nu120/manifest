@@ -7,7 +7,7 @@
 
     <project name="nu120/manifest" path="manifest" revision="master">
         <linkfile src="Makefile" dest="Makefile" />
-        <linkfile src="enter_buildenv.sh" dest="enter_buildenv.sh" />
+        <linkfile src="enter_buildenv_49.sh" dest="enter_buildenv.sh" />
     </project>
 
     <!-- Buildroot -->

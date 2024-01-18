@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="origin" fetch="ssh://git@github.com/" />
+    <remote name="upstream" fetch="https://github.com/" />
+
+    <default revision="master" remote="origin" />
+
+    <project name="nu120/manifest" path="manifest" revision="master">
+        <linkfile src="Makefile" dest="Makefile" />
+        <linkfile src="enter_buildenv_54.sh" dest="enter_buildenv.sh" />
+    </project>
+
+    <!-- Buildroot -->
+    <project name="nu120/uboot-repo" path="bootloader/uboot-repo" clone-depth="1" />
+    <project name="nu120/buildroot" path="buildroot" clone-depth="1" revision="nu120_5_4" />
+    <project name="nu120/hardware" path="hardware" clone-depth="1" revision="evk_5_4" />
+    <project name="nu120/kernel" path="kernel/aml-5.4" clone-depth="1" revision="nu120_5_4" />
+    <project name="nu120/multimedia" path="multimedia" clone-depth="1" revision="evk_5_4" />
+    <project name="nu120/vendor" path="vendor" clone-depth="1" revision="evk_5_4" />
+    <project name="nu120/toolchain_arm_gcc-arm-10.3-x86_64-arm"
+	     path="toolchain/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"
+             clone-depth="1" />
+    <project name="nu120/toolchain_arm_gcc-arm-none-eabi-6-2017-q2-update"
+	     path="toolchain/gcc/linux-x86/arm/gcc-arm-none-eabi-6-2017-q2-update"
+             clone-depth="1" />
+    <project name="nu120/toolchain_arm_gcc-arm-10.2-x86_64-aarch64"
+	     path="toolchain/gcc/linux-x86/aarch64/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu"
+             clone-depth="1" />
+    <project name="nu120/toolchain_aarch64_gcc-linaro-7.3.1"
+	     path="toolchain/gcc/linux-x86/aarch64/gcc-linaro-7.3.1-2018.05-i686_aarch64-elf"
+             clone-depth="1" />
+
+    <!-- NUGU -->
+    <project name="nu120/packages" path="buildroot/package/nugu/ipk" clone-depth="1" />
+</manifest>
